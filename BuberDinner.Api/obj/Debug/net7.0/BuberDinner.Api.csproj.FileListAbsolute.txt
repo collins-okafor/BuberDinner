@@ -31,3 +31,8 @@ C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Contracts.pdb
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Application.pdb
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Infrastructure.pdb
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

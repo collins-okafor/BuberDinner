@@ -34,14 +34,14 @@ namespace BuberDinner.Application.Services.Authentication
                 token);
         }
 
-        public AuthenticationResult Login(string email, string password)
+         public AuthenticationResult Login(string email, string password)
         {
             return new AuthenticationResult(
                 Guid.NewGuid(),
                 "firstName",
                 "lastName",
                 email,
-                "Token");
+                "token");
         }
     }
 }
