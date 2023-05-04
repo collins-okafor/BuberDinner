@@ -1,0 +1,12 @@
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\bin\Debug\net7.0\BuberDinner.Application.deps.json
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\bin\Debug\net7.0\BuberDinner.Application.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\bin\Debug\net7.0\BuberDinner.Application.pdb
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.csproj.AssemblyReference.cache
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.AssemblyInfoInputs.cache
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.AssemblyInfo.cs
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.csproj.CoreCompileInputs.cache
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\refint\BuberDinner.Application.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\BuberDinner.Application.pdb
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Application\obj\Debug\net7.0\ref\BuberDinner.Application.dll
