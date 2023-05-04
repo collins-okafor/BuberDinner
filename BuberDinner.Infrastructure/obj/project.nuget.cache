@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zIRHTTTnpjAzCd8tb12GHeg19EbEoIitvbxhjA96L9Ex/YECv3zvZSHPEAFBuGsMhR0mNeF8n0+b0zLXOEGbVw==",
+  "dgSpecHash": "ZISKOHxkJhd0YQwK2thJ/7Wiz1UP2JGqf9CnFu+8/iAv0craTwbzV/kMW59YsEJDE6LNRkq0WmN3zjFGqUs08Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Infrastructure\\BuberDinner.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

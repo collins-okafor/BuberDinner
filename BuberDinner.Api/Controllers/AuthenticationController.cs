@@ -27,13 +27,32 @@ namespace BuberDinner.Api.Controllers
                 request.LastName,
                 request.Email,
                 request.Password);
-            return Ok(request);
+
+            var response = new AuthenticationResponse(
+                authResult.Id,
+                authResult.FirstName,
+                authResult.LastName,
+                authResult.Email,
+                authResult.Token
+            );
+            return Ok(response);
         }
 
         [HttpPost("login")]
         public IActionResult Login(LoginRequest request)
         {
-            return Ok(request);
+            var authResult = _authenticationService.Login(
+                request.Email,
+                request.Password);
+
+            var response = new AuthenticationResponse(
+                authResult.Id,
+                authResult.FirstName,
+                authResult.LastName,
+                authResult.Email,
+                authResult.Token
+            );
+            return Ok(response);
         }
         
     }
