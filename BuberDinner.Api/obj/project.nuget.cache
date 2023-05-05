@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "/jtcFpWyWIL5s+g/hQEmOlQ3MsV2n6kF0/LXudBsotSM/1nlBS5iVQnnMxMbLSLp1URxHToeP2q5tIUyv9NNmw==",
+  "dgSpecHash": "dgrvRCUajrTf9RkmZghoL9KeC/iV9L2VAwTggA+qTN17Y602l4PeF5LNg3V3Tn93VjIIULs3FwTj+95t3Gy50Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.configuration.binder\\7.0.0\\microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\7.0.0\\microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.30.0\\microsoft.identitymodel.abstractions.6.30.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.30.0\\microsoft.identitymodel.jsonwebtokens.6.30.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.identitymodel.logging\\6.30.0\\microsoft.identitymodel.logging.6.30.0.nupkg.sha512",
