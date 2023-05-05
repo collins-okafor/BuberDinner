@@ -36,3 +36,5 @@ C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Domain.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Domain.pdb

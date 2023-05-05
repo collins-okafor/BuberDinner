@@ -9,6 +9,7 @@
       "BuberDinner.Infrastructure/1.0.0": {
         "dependencies": {
           "BuberDinner.Application": "1.0.0",
+          "BuberDinner.Domain": "1.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0",
@@ -174,10 +175,16 @@
       "System.Text.Json/4.7.2": {},
       "BuberDinner.Application/1.0.0": {
         "dependencies": {
+          "BuberDinner.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {
           "BuberDinner.Application.dll": {}
+        }
+      },
+      "BuberDinner.Domain/1.0.0": {
+        "runtime": {
+          "BuberDinner.Domain.dll": {}
         }
       }
     }
@@ -329,6 +336,11 @@
       "hashPath": "system.text.json.4.7.2.nupkg.sha512"
     },
     "BuberDinner.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BuberDinner.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

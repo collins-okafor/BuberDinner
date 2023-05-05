@@ -17,6 +17,16 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "BuberDinner.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BuberDinner.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Domain.dll": {}
+        }
       }
     }
   },
@@ -49,10 +59,16 @@
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BuberDinner.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Domain/BuberDinner.Domain.csproj",
+      "msbuildProject": "../BuberDinner.Domain/BuberDinner.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BuberDinner.Domain >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0"
     ]
   },
@@ -88,7 +104,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
+              "projectPath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

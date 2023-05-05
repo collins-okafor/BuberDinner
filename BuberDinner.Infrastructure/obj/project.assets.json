@@ -317,6 +317,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "BuberDinner.Domain": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "compile": {
@@ -324,6 +325,16 @@
         },
         "runtime": {
           "bin/placeholder/BuberDinner.Application.dll": {}
+        }
+      },
+      "BuberDinner.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/BuberDinner.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuberDinner.Domain.dll": {}
         }
       }
     }
@@ -1008,11 +1019,17 @@
       "type": "project",
       "path": "../BuberDinner.Application/BuberDinner.Application.csproj",
       "msbuildProject": "../BuberDinner.Application/BuberDinner.Application.csproj"
+    },
+    "BuberDinner.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BuberDinner.Domain/BuberDinner.Domain.csproj",
+      "msbuildProject": "../BuberDinner.Domain/BuberDinner.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "BuberDinner.Application >= 1.0.0",
+      "BuberDinner.Domain >= 1.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 7.0.0",
@@ -1054,6 +1071,9 @@
           "projectReferences": {
             "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj": {
               "projectPath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj"
+            },
+            "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj": {
+              "projectPath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj"
             }
           }
         }
