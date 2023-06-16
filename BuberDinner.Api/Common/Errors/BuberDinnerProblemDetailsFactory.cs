@@ -95,14 +95,14 @@ public class BuberDinnerProblemDetailsFactory: ProblemDetailsFactory
             problemDetails.Extensions["traceId"] = traceId;
         }
 
-        var erros = httpContext?.Items["errors"] as List<Error>;
-        if (erros is not null)
+        var errors = httpContext?.Items["errors"] as List<Error>;
+        if (errors is not null)
         {
-            problemDetails.Extensions["errors"] = erros;
+            problemDetails.Extensions.Add("errorCodes", errors.Select(erros => erros.Code));
         }
 
-        _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
+        // _configure?.Invoke(new() { HttpContext = httpContext!, ProblemDetails = problemDetails });
         
-        problemDetails.Extensions.Add("errorCodes", "customValue");
+        // problemDetails.Extensions.Add("errorCodes", "customValue");
     }
 }
