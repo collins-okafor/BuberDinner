@@ -11,7 +11,7 @@ namespace BuberDinner.Api.Controllers
     [Route("api/[controller]")]
     public class ApiController : ControllerBase
     {
-        public IActionResult Problem(List<Error> errors)
+        protected IActionResult Problem(List<Error> errors)
         {
             var firstError = errors[0];
 
@@ -22,8 +22,8 @@ namespace BuberDinner.Api.Controllers
                 ErrorType.NotFound => StatusCodes.Status404NotFound,
                 _ => StatusCodes.Status500InternalServerError
             };
-            
-            return Problem();
+
+            return Problem(statusCode: statusCode, title: firstError.Description);
         }        
     }
 }
