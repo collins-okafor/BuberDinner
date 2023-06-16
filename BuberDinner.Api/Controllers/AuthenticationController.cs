@@ -10,11 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers
 {
-    [ApiController]
     [Route("auth")]
-    
-    
-    public class AuthenticationController : ControllerBase
+    public class AuthenticationController : ApiController
     {
         private readonly IAuthenticationService _authenticationService;
 
@@ -34,17 +31,7 @@ namespace BuberDinner.Api.Controllers
 
             return authResult.Match(
                 authResult => Ok(MapAuthResult(authResult)),
-                    _ => Problem(statusCode: StatusCodes.Status409Conflict, title: "User already exists"));
-        }
-        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
-        {
-            return new AuthenticationResponse(
-                authResult.User.Id,
-                authResult.User.FirstName,
-                authResult.User.LastName,
-                authResult.User.Email,
-                authResult.Token
-            );
+                error => Problem(error));
         }
 
         [HttpPost("login")]
@@ -56,7 +43,18 @@ namespace BuberDinner.Api.Controllers
 
             return authResult.Match(
                 authResult => Ok(MapAuthResult(authResult)),
-                    _ => Problem(statusCode: StatusCodes.Status409Conflict, title: "User already exists"));
+                error => Problem(error));
+        }
+
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
+        {
+            return new AuthenticationResponse(
+                authResult.User.Id,
+                authResult.User.FirstName,
+                authResult.User.LastName,
+                authResult.User.Email,
+                authResult.Token
+            );
         }
         
     }
