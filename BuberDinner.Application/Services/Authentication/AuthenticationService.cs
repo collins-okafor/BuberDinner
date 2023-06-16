@@ -57,7 +57,7 @@ namespace BuberDinner.Application.Services.Authentication
             // 1. Validate the user exists
             if (_userRepository.GetUserByEmail(email) is not User user)
             {
-                throw new Exception("User with given email does not exist.");
+                return Errors.Authentication.InvalidCredentials;
             }
 
             // 2. Validate the password is correct
