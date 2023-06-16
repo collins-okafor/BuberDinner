@@ -40,6 +40,11 @@ namespace BuberDinner.Api.Controllers
             ErrorOr<AuthenticationResult> authResult = _authenticationService.Login(
                 request.Email,
                 request.Password);
+            
+            if(authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+            {
+                return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);
+            }
 
             return authResult.Match(
                 authResult => Ok(MapAuthResult(authResult)),
