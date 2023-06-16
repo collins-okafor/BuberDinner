@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pwYw+JZyFtygf2iP6kvSc3VdLXpmKG/JODMhowYK0NwMpUtDttJ8u5iuDZLB6MCSBqqZSQUMga+uXRpdrx5uaA==",
+  "dgSpecHash": "9uhfT/94uutv2qygpFfn171iSWfmyOaOCupi9EaKpjc3lYBzoQFYpNihEQMYFAI2slAvEr32CF+VMWAYIPqNnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Domain\\BuberDinner.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\cokafor\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512"
+  ],
   "logs": []
 }

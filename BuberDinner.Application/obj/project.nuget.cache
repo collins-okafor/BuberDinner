@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IFzZwPFDh/A0StihH+8h4e2AceWW5TR2+TZT5v7OPiB8C9JcWs0H9Yo8uWMhnNxnWq+aqzaV8QGiYuHG6Bu88A==",
+  "dgSpecHash": "r9wZKT64r2FGduhLxLtFiLv5KOXpWoWarR7/nWnc8IEXxqgyg6HLaKbM28LEl16HrodR3qj9Jpns/XNKr8rq6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cokafor\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
