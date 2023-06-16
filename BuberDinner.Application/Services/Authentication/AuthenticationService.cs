@@ -63,7 +63,7 @@ namespace BuberDinner.Application.Services.Authentication
             // 2. Validate the password is correct
             if(user.Password != password)
             {
-                throw new Exception("Invalid password.");
+                return Errors.Authentication.InvalidCredentials;
             }
 
             // 3. Create JWT token
