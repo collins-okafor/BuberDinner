@@ -33,10 +33,10 @@ namespace BuberDinner.Api.Controllers
                 request.Password);
 
             return authResult.Match(
-                authResult => Ok(NewMethod(authResult)),
+                authResult => Ok(MapAuthResult(authResult)),
                     _ => Problem(statusCode: StatusCodes.Status409Conflict, title: "User already exists"));
         }
-        private static AuthenticationResponse NewMethod(AuthenticationResult authResult)
+        private static AuthenticationResponse MapAuthResult(AuthenticationResult authResult)
         {
             return new AuthenticationResponse(
                 authResult.User.Id,

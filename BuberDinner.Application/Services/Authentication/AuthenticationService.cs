@@ -52,7 +52,7 @@ namespace BuberDinner.Application.Services.Authentication
                 token);
         }
 
-         public AuthenticationResult Login(string email, string password)
+         public ErrorOr<AuthenticationResult> Login(string email, string password)
         {
             // 1. Validate the user exists
             if (_userRepository.GetUserByEmail(email) is not User user)

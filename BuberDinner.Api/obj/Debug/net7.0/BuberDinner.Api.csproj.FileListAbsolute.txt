@@ -38,3 +38,5 @@ C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Domain.dll
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Domain.pdb
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ErrorOr.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\FluentResults.dll
