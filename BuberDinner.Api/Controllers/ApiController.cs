@@ -13,6 +13,7 @@ namespace BuberDinner.Api.Controllers
     {
         protected IActionResult Problem(List<Error> errors)
         {
+            HttpContext.Items["errors"] = errors;
             var firstError = errors[0];
 
             var statusCode = firstError.Type switch
