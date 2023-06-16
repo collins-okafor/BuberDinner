@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BuberDinner.Api.Http;
 using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +14,7 @@ namespace BuberDinner.Api.Controllers
     {
         protected IActionResult Problem(List<Error> errors)
         {
-            HttpContext.Items["errors"] = errors;
+            HttpContext.Items[HttpContextItemKeys.Errors] = errors;
             var firstError = errors[0];
 
             var statusCode = firstError.Type switch
