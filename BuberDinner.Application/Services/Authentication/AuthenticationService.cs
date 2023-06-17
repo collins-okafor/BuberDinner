@@ -46,7 +46,6 @@ namespace BuberDinner.Application.Services.Authentication
 
             var token = _jwtTokenGenerator.GenerateToken(user);
 
-
             return new AuthenticationResult(
                 user,
                 token);
@@ -54,19 +53,16 @@ namespace BuberDinner.Application.Services.Authentication
 
          public ErrorOr<AuthenticationResult> Login(string email, string password)
         {
-            // 1. Validate the user exists
             if (_userRepository.GetUserByEmail(email) is not User user)
             {
                 return Errors.Authentication.InvalidCredentials;
             }
 
-            // 2. Validate the password is correct
             if(user.Password != password)
             {
                 return Errors.Authentication.InvalidCredentials;
             }
 
-            // 3. Create JWT token
             var token = _jwtTokenGenerator.GenerateToken(user);
 
             return new AuthenticationResult(
