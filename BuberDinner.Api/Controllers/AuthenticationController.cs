@@ -41,7 +41,7 @@ namespace BuberDinner.Api.Controllers
                 request.Email,
                 request.Password);
             
-            if(authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
+            if(authResult.IsError)
             {
                 return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);
             }
