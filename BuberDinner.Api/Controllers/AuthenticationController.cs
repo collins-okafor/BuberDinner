@@ -35,7 +35,7 @@ namespace BuberDinner.Api.Controllers
             ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
             return authResult.Match(
-                authResult => Ok(_mapper.Map<AuthenticationResult>(authResult)),
+                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
                 error => Problem(error));
         }
 
@@ -51,7 +51,7 @@ namespace BuberDinner.Api.Controllers
             }
 
             return authResult.Match(
-                authResult => Ok(_mapper.Map<AuthenticationResult>(authResult)),
+                authResult => Ok(_mapper.Map<AuthenticationResponse>(authResult)),
                 error => Problem(error));
         }   
     }
