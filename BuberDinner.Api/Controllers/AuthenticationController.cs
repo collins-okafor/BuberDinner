@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BuberDinner.Application.Authentication.Commands.Register;
+using BuberDinner.Application.Authentication.Queries.Login;
 using BuberDinner.Application.Common.Errors;
 using BuberDinner.Application.Services.Authentication;
-using BuberDinner.Application.Services.Authentication.Commands;
 using BuberDinner.Application.Services.Authentication.Common;
-using BuberDinner.Application.Services.Authentication.Queries;
 using BuberDinner.Contracts.Authentication;
+using BuberDinner.Domain.Common.Errors;
 using ErrorOr;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -18,9 +18,9 @@ namespace BuberDinner.Api.Controllers
     [Route("auth")]
     public class AuthenticationController : ApiController
     {
-        private readonly IMediator _mediator;
+        private readonly ISender _mediator;
 
-        public AuthenticationController(IMediator mediator)
+        public AuthenticationController(ISender mediator)
         {
             _mediator = mediator;
         }
@@ -41,13 +41,14 @@ namespace BuberDinner.Api.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login(LoginRequest request)
+        public async Task<IActionResult> Login(LoginRequest request)
         {
-            ErrorOr<AuthenticationResult> authResult =  _authenticationQueryService.Login(
+            var query = new LoginQuery(
                 request.Email,
                 request.Password);
+            var authResult = await _mediator.Send(query);
             
-            if(authResult.IsError)
+            if(authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
             {
                 return Problem(statusCode: StatusCodes.Status401Unauthorized, title: authResult.FirstError.Description);
             }
