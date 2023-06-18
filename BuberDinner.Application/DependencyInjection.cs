@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BuberDinner.Application.Services.Authentication;
-using BuberDinner.Application.Services.Commands.Authentication;
-using BuberDinner.Application.Services.Queries.Authentication;
+using BuberDinner.Application.Services.Authentication.Commands;
+using BuberDinner.Application.Services.Authentication.Queries;
 using Microsoft.Extensions.DependencyInjection;
 
 

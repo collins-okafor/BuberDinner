@@ -6,12 +6,13 @@ using BuberDinner.Application.Common.Errors;
 using BuberDinner.Application.Common.Interfaces.Authentication;
 using BuberDinner.Application.Common.Interfaces.Persistence;
 using BuberDinner.Application.Services.Authentication;
+using BuberDinner.Application.Services.Authentication.Common;
 using BuberDinner.Domain.Common.Errors;
 using BuberDinner.Domain.Entities;
 using ErrorOr;
 using FluentResults;
 
-namespace BuberDinner.Application.Services.Queries.Authentication
+namespace BuberDinner.Application.Services.Authentication.Queries
 {
     public class AuthenticationQueryService : IAuthenticationQueryService
     {
