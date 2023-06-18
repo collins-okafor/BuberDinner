@@ -40,3 +40,6 @@ C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\BuberDinner.Domain.pdb
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\ErrorOr.dll
 C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\FluentResults.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\cokafor\Documents\Dotnet\DDD\BuberDinner\BuberDinner.Api\bin\Debug\net7.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
