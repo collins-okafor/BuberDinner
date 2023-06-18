@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "J7u7xg3AOyNQKEK6+3XEs481Se2MzegTvVpniTufS6EKBsNb/0QdA2ByBWL2VqySoHEgSF5PvvcsMfrckPMZJQ==",
+  "dgSpecHash": "Hm3ye6xSsBt3HS3hO3H2YuUbQCITVdjEfmV+Olt2L9yHkRzMows2/ToUfPM5yFadrUH7TX/KBfCqUP1laeAQEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cokafor\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

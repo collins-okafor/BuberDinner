@@ -9,6 +9,7 @@ using BuberDinner.Application.Services.Authentication.Common;
 using BuberDinner.Application.Services.Authentication.Queries;
 using BuberDinner.Contracts.Authentication;
 using ErrorOr;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BuberDinner.Api.Controllers
@@ -16,13 +17,11 @@ namespace BuberDinner.Api.Controllers
     [Route("auth")]
     public class AuthenticationController : ApiController
     {
-        private readonly IAuthenticationCommandService _authenticationCommandService;
-        private readonly IAuthenticationQueryService _authenticationQueryService;
+        private readonly IMediator _mediator;
 
-        public AuthenticationController(IAuthenticationCommandService authenticationCommandService, IAuthenticationQueryService authenticationQueryService)
+        public AuthenticationController(IMediator mediator)
         {
-            _authenticationCommandService = authenticationCommandService;
-            _authenticationQueryService = authenticationQueryService;
+            _mediator = mediator;
         }
 
         [HttpPost("register")]

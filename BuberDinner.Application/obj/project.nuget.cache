@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "r9wZKT64r2FGduhLxLtFiLv5KOXpWoWarR7/nWnc8IEXxqgyg6HLaKbM28LEl16HrodR3qj9Jpns/XNKr8rq6g==",
+  "dgSpecHash": "0T9Q/v4HtJZusWHVd1jvIR0gkufMl/YrWlK0682LFTI8CP5mW4ISnTfrLI0eHR+503O8GOnsrcg+LN9lI8hwFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cokafor\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
