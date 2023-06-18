@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BuberDinner.Application.Authentication.Commands.Register;
 using BuberDinner.Application.Common.Errors;
 using BuberDinner.Application.Services.Authentication;
 using BuberDinner.Application.Services.Authentication.Commands;
@@ -25,13 +26,14 @@ namespace BuberDinner.Api.Controllers
         }
 
         [HttpPost("register")]
-        public IActionResult Register(RegisterRequest request)
+        public async Task<IActionResult> Register(RegisterRequest request)
         {
-            ErrorOr<AuthenticationResult> authResult = _authenticationCommandService.Register(
+            var command = new RegisterCommand(
                 request.FirstName,
                 request.LastName,
                 request.Email,
                 request.Password);
+            ErrorOr<AuthenticationResult> authResult = await _mediator.Send(command);
 
             return authResult.Match(
                 authResult => Ok(MapAuthResult(authResult)),
@@ -41,7 +43,7 @@ namespace BuberDinner.Api.Controllers
         [HttpPost("login")]
         public IActionResult Login(LoginRequest request)
         {
-            ErrorOr<AuthenticationResult> authResult = _authenticationQueryService.Login(
+            ErrorOr<AuthenticationResult> authResult =  _authenticationQueryService.Login(
                 request.Email,
                 request.Password);
             
