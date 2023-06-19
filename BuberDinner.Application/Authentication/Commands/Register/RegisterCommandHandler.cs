@@ -22,30 +22,31 @@ IRequestHandler<RegisterCommand, ErrorOr<AuthenticationResult>>
 
     public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand command, CancellationToken cancellationToken)
     {
+        await Task.CompletedTask;
         // 1. Validate user doesn't exist
-            if (_userRepository.GetUserByEmail(command.Email) is not null)
-            {
-                return Errors.User.DuplicateEmail;
-            }
+        if (_userRepository.GetUserByEmail(command.Email) is not null)
+        {
+            return Errors.User.DuplicateEmail;
+        }
 
-            // 2. Create user (generate unique ID) and Password
-            var user = new User
-            {
-                FirstName = command.FirstName,
-                LastName = command.LastName,
-                Email = command.Email,
-                Password = command.Password
-            };
+        // 2. Create user (generate unique ID) and Password
+        var user = new User
+        {
+            FirstName = command.FirstName,
+            LastName = command.LastName,
+            Email = command.Email,
+            Password = command.Password
+        };
 
-            _userRepository.Add(user);
+        _userRepository.Add(user);
 
-            // Create JWT token
-            Guid userId = Guid.NewGuid();
+        // Create JWT token
+        Guid userId = Guid.NewGuid();
 
-            var token = _jwtTokenGenerator.GenerateToken(user);
+        var token = _jwtTokenGenerator.GenerateToken(user);
 
-            return new AuthenticationResult(
-                user,
-                token);
+        return new AuthenticationResult(
+            user,
+            token);
     }
 }
