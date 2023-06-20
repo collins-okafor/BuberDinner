@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ABbwq5LwxaSpmt4P+FlQcRWhvCYL0+wCPOA6wC8x9si1qg89pWbXUYwKynC9EmJsBQTq6/J3QQ5AdM+onIflGw==",
+  "dgSpecHash": "tZzy7DQMl5SuOHUnenp9wJtMWe2j/YP/QhjaVp3JQanUc87qUdgBVP8y7J+/BdJCSUqMbBxgsd7MWt9ORyqZ0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Application\\BuberDinner.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cokafor\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "80SV9dWih4OndNlwa7ZyXvHNgULaSv4xhZMCFIxT2scY4kBRZxxX91U56W9nGmAbXW2/j/neD9NmbXEyOEPk4g==",
+  "dgSpecHash": "6pN0xfE3PLHQ9LzTaRLRzUu8FWVcytzvLixz5d5Glv6wvchp4hOPArWBckm3TVhgAEdcMbS2AaTZkzAAtDFkWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\cokafor\\Documents\\Dotnet\\DDD\\BuberDinner\\BuberDinner.Api\\BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cokafor\\.nuget\\packages\\erroror\\1.2.1\\erroror.1.2.1.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
+    "C:\\Users\\cokafor\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\mapster\\7.3.0\\mapster.7.3.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
     "C:\\Users\\cokafor\\.nuget\\packages\\mapster.dependencyinjection\\1.0.0\\mapster.dependencyinjection.1.0.0.nupkg.sha512",
