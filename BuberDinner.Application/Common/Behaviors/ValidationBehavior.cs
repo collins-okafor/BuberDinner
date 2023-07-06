@@ -16,8 +16,8 @@ namespace BuberDinner.Application.Common.Behaviors
             where TRequest : IRequest<TResponse>
             where TResponse : IErrorOr
     {
-        private readonly IValidator<RegisterCommand> _validator;
-        public ValdationBehavior(IValidator<TRequest> validator)
+        private readonly IValidator<TRequest>? _validator;
+        public ValdationBehavior(IValidator<TRequest>? validator)
         {
             _validator = validator;
             
