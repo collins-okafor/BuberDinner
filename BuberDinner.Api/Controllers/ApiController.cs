@@ -25,10 +25,6 @@ namespace BuberDinner.Api.Controllers
                 return ValidationProblem(errors);
             }
 
-            if (errors.All(e => e.NumericType == 23))
-            {
-                return ValidationProblem(errors);
-            }
 
             HttpContext.Items[HttpContextItemKeys.Errors] = errors;
 
