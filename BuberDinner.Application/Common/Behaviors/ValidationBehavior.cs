@@ -11,15 +11,18 @@ using MediatR;
 
 namespace BuberDinner.Application.Common.Behaviors
 {
-    public class ValdationBehavior : IPipelineBehavior<TRequest, TResponse>
+    public class ValdationBehavior<TRequest, TResponse> : 
+        IPipelineBehavior<TRequest, TResponse>
+            where TRequest : IRequest<TResponse>
+            where TResponse : IErrorOr
     {
         private readonly IValidator<RegisterCommand> _validator;
-        public ValidateRegisterCommandBehavior(IValidator<RegisterCommand> validator)
+        public ValdationBehavior(IValidator<RegisterCommand> validator)
         {
             _validator = validator;
             
         }
-        public async Task<ErrorOr<AuthenticationResult>> Handle(RegisterCommand request,
+        public async Task<TResponse> Handle(RegisterCommand request,
             RequestHandlerDelegate<ErrorOr<AuthenticationResult>> next,
             CancellationToken cancellationToken)
         {
