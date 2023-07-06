@@ -23,7 +23,7 @@ namespace BuberDinner.Api.Controllers
                 {
                     modelStateDictionary.AddModelError(error.Code, error.Description);
                 }
-                return ValidationProblem();
+                return ValidationProblem(modelStateDictionary);
             }
             HttpContext.Items[HttpContextItemKeys.Errors] = errors;
             var firstError = errors[0];
