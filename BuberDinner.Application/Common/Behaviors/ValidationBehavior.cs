@@ -35,7 +35,7 @@ namespace BuberDinner.Application.Common.Behaviors
                 .ConvertAll(x => Error.Validation(x.PropertyName, x.ErrorMessage))
                 .ToList();
            
-            return errors;
+            return (dynamic)errors;
         }
     }
 }

@@ -18,6 +18,10 @@ namespace BuberDinner.Application
         {
         
             services.AddMediatR(typeof(DependencyInjection).Assembly);
+            services.AddScoped(
+                typeof(IPipelineBehavior<,>),
+                typeof(ValdationBehavior<,>));
+                
             services.AddScoped<IPipelineBehavior<RegisterCommand, ErrorOr<AuthenticationResult>>, ValidateRegisterCommandBehavior>();
             return services;
         }
