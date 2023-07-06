@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using BuberDinner.Api.Http;
 using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace BuberDinner.Api.Controllers
 {
@@ -14,6 +15,11 @@ namespace BuberDinner.Api.Controllers
     {
         protected IActionResult Problem(List<Error> errors)
         {
+            if (errors.All(e => e.Type == ErrorType.Validation))
+            {
+                var modelStateDictionary = new ModelStateDictionary();
+                return ValidationProblem();
+            }
             HttpContext.Items[HttpContextItemKeys.Errors] = errors;
             var firstError = errors[0];
 
