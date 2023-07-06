@@ -29,7 +29,7 @@ namespace BuberDinner.Application.Common.Behaviors
                 return await next();
             }
             var errors = validationResult.Errors
-                .Select(x => Error.Validation(x.PropertyName, x.ErrorMessage))
+                .ConvertAll(x => Error.Validation(x.PropertyName, x.ErrorMessage))
                 .ToList();
            
             return errors;
