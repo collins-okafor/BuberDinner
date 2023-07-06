@@ -18,6 +18,11 @@ namespace BuberDinner.Api.Controllers
             if (errors.All(e => e.Type == ErrorType.Validation))
             {
                 var modelStateDictionary = new ModelStateDictionary();
+
+                foreach (var error in errors)
+                {
+                    modelStateDictionary.AddModelError(error.Code, error.Description);
+                }
                 return ValidationProblem();
             }
             HttpContext.Items[HttpContextItemKeys.Errors] = errors;
