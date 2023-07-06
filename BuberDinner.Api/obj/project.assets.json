@@ -554,6 +554,7 @@
         "dependencies": {
           "BuberDinner.Domain": "1.0.0",
           "ErrorOr": "1.2.1",
+          "FluentValidation": "11.5.2",
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -1913,7 +1914,6 @@
       "BuberDinner.Contracts >= 1.0.0",
       "BuberDinner.Infrastructure >= 1.0.0",
       "ErrorOr >= 1.2.1",
-      "FluentValidation >= 11.5.2",
       "Mapster >= 7.3.0",
       "Mapster.DependencyInjection >= 1.0.0",
       "MediatR >= 11.1.0"
@@ -1977,10 +1977,6 @@
           "ErrorOr": {
             "target": "Package",
             "version": "[1.2.1, )"
-          },
-          "FluentValidation": {
-            "target": "Package",
-            "version": "[11.5.2, )"
           },
           "Mapster": {
             "target": "Package",

@@ -59,10 +59,6 @@
               "target": "Package",
               "version": "[1.2.1, )"
             },
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[11.5.2, )"
-            },
             "Mapster": {
               "target": "Package",
               "version": "[7.3.0, )"
@@ -147,6 +143,10 @@
             "ErrorOr": {
               "target": "Package",
               "version": "[1.2.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
             },
             "MediatR": {
               "target": "Package",
