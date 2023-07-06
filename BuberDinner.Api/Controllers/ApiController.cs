@@ -15,7 +15,17 @@ namespace BuberDinner.Api.Controllers
     {
         protected IActionResult Problem(List<Error> errors)
         {
+            if (errors.Count is 0)
+            {
+                return Problem();
+            }
+
             if (errors.All(e => e.Type == ErrorType.Validation))
+            {
+                return ValidationProblem(errors);
+            }
+
+            if (errors.All(e => e.NumericType == 23))
             {
                 return ValidationProblem(errors);
             }
