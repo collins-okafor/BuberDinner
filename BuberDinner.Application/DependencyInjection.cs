@@ -21,8 +21,6 @@ namespace BuberDinner.Application
             services.AddScoped(
                 typeof(IPipelineBehavior<,>),
                 typeof(ValdationBehavior<,>));
-                
-            services.AddScoped<IPipelineBehavior<RegisterCommand, ErrorOr<AuthenticationResult>>, ValidateRegisterCommandBehavior>();
             return services;
         }
     }
