@@ -17,13 +17,13 @@ namespace BuberDinner.Application.Common.Behaviors
             where TResponse : IErrorOr
     {
         private readonly IValidator<RegisterCommand> _validator;
-        public ValdationBehavior(IValidator<RegisterCommand> validator)
+        public ValdationBehavior(IValidator<TRequest> validator)
         {
             _validator = validator;
             
         }
-        public async Task<TResponse> Handle(RegisterCommand request,
-            RequestHandlerDelegate<ErrorOr<AuthenticationResult>> next,
+        public async Task<TResponse> Handle(TRequest request,
+            RequestHandlerDelegate<TResponse> next,
             CancellationToken cancellationToken)
         {
             var validationResult = await _validator.ValidateAsync(request, cancellationToken);
