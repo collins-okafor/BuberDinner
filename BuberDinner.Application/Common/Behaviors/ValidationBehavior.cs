@@ -11,7 +11,7 @@ using MediatR;
 
 namespace BuberDinner.Application.Common.Behaviors
 {
-    public class ValidateRegisterCommandBehavior : IPipelineBehavior<RegisterCommand, ErrorOr<AuthenticationResult>>
+    public class ValdationBehavior : IPipelineBehavior<TRequest, TResponse>
     {
         private readonly IValidator<RegisterCommand> _validator;
         public ValidateRegisterCommandBehavior(IValidator<RegisterCommand> validator)
